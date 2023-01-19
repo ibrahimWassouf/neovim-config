@@ -4,7 +4,6 @@ local opt = vim.opt -- for conciseness
 opt.number = true
 
 -- tabs & indentation
-
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
@@ -24,6 +23,8 @@ opt.cursorline = false
 opt.syntax = "on"
 opt.background = "dark"
 opt.termguicolors = true
+opt.showmode = false
+
 -- backspace
 opt.backspace = "indent,eol,start"
 

@@ -62,7 +62,15 @@ return require("packer").startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp") --allows lsp servers to appear in autocompletion
-	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- adds enhanced UIs to lsp
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			require("lspsaga").setup({})
+		end,
+	})
+
+	-- adds enhanced UIs to lsp
 	use("jose-elias-alvarez/typescript.nvim") -- improves the typescript lsp
 	use("onsails/lspkind.nvim") --adds vscode like icons to autocompletion
 
