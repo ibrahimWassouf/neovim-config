@@ -26,6 +26,7 @@ treesitter.setup({
 		"dockerfile",
 		"gitignore",
 		"php",
+		"phpdoc",
 	},
 	auto_install = true,
 })
